@@ -1,0 +1,13 @@
+.sheet-root { display: flex; flex-direction: column; height: 100vh; gap: 8px; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji; }
+.toolbar { display: flex; gap: 8px; align-items: center; padding: 8px; border-bottom: 1px solid #e5e7eb; }
+.toolbar .spacer { flex: 1; }
+.formula { display: flex; align-items: center; gap: 8px; padding: 4px 8px; border: 1px solid #e5e7eb; border-radius: 6px; margin: 0 8px; }
+.formula span { color: #6b7280; font-weight: 600; }
+.formula input { flex: 1; border: none; outline: none; font-size: 14px; padding: 6px; }
+.grid { display: grid; align-items: stretch; overflow: auto; border-top: 1px solid #e5e7eb; border-left: 1px solid #e5e7eb; margin: 0 8px 8px; }
+.corner { position: sticky; left: 0; top: 0; z-index: 3; background: #f9fafb; border-right: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb; height: 28px; }
+.col-header { position: sticky; top: 0; z-index: 2; background: #f9fafb; border-right: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb; display: flex; align-items: center; justify-content: center; height: 28px; font-weight: 600; color: #374151; }
+.row-header { position: sticky; left: 0; z-index: 1; background: #f9fafb; border-right: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb; display: flex; align-items: center; justify-content: center; width: 48px; height: 28px; font-weight: 600; color: #374151; }
+.cell { border-right: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb; height: 28px; display: flex; }
+.cell-input { width: 100%; border: none; outline: none; padding: 4px 6px; font-size: 14px; background: white; }
+.cell.selected { outline: 2px solid #3b82f6; outline-offset: -2px; }
